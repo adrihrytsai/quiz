@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+   font-family: "Merriweather", serif;
+   margin: 0;
+}
+.main-screen , .start-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main-screen{
+    display: none;
+}
+
+.answer{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.question{
+    font-size: 2.5em;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.answer-button{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start-button{
+    border: 2px solid black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 7px;
+    padding: 1em;
+    
+    
+    transform: none;
+    cursor: pointer;
+    box-shadow: none;
+    transition: .5s linear;
+}
+
+.button:hover {
+    
+    transform: scale(1.05) rotate(5deg);
+    transition: .2s linear;
+}
+
+.button:active {
+    transition-property: box-shadow, transform;
+    box-shadow: none;
+    transform: none;
+}
